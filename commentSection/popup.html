@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Comment Section</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+    <h1>Welcome to Comments!</h1>
+
+    <!-- Comment Section UI -->
+    <div id="commentSection" style="display: block;">
+      <div class="add-comment">
+          <div class="video-container">
+              <!-- Video player goes here -->
+              <!-- Adjust the video player according to your requirements -->
+          </div>
+          <div id="commentsContainer"></div>
+          <ul id="commentsList"></ul>
+          <div id="enterComments">
+            <textarea id="commentInput" placeholder="Write your comment here..."></textarea>
+            <button id="addCommentButton">Add Comment</button>
+            <button id="deleteComments">Delete Comments</button>
+          </div>
+      </div>
+    </div>
+
+        <!-- Netflix Message -->
+    <div id="netflixSection" style="display: none;">
+        <div class="startWatching">
+          <p>Please start watching a Netflix movie to access the comment section.</p>
+        </div>
+    </div>
+
+    <!-- Prompt Message -->
+    <div id="promptMessage" style="display: none;">
+        <p>Please start watching a Netflix movie to access the comment section.</p>
+        <button id="goToNetflixButton">Go to Netflix</button>
+    </div>
+
+    <!-- Container to display comments -->
+    <div id="commentsContainer"></div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
+
